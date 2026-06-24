@@ -1,0 +1,11 @@
+environment           = "dev"
+location              = "eastus"
+rg_name               = "rg-contoso-dev"
+vnet_name             = "vnet-contoso-dev"
+vnet_address_space    = ["10.0.0.0/16"]
+subnet_name           = "snet-core-dev"
+subnet_address_prefix = ["10.0.1.0/24"]
+storage_account_name  = "stcontosodev001"
+vm_name               = "vm-linux-dev"
+vm_size               = "Standard_B1s"
+admin_username        = "azureuser"
