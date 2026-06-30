@@ -25,7 +25,7 @@ module "network" {
 # Módulo de Almacenamiento (Storage Account con Versionamiento)
 module "storage" {
   source               = "../../modules/storage"
-  storage_account_name = "storageterraform"
+  storage_account_name = "storageterraform1"
   location             = azurerm_resource_group.rg.location
   resource_group_name  = azurerm_resource_group.rg.name
   environment         = var.environment
