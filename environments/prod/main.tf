@@ -28,7 +28,7 @@ module "storage" {
   storage_account_name = "storageterraform1"
   location             = azurerm_resource_group.rg.location
   resource_group_name  = azurerm_resource_group.rg.name
-  environment         = var.environment
+  environment          = var.environment
 }
 
 # Módulo de Cómputo (Bonus: Módulo propio para la VM Linux)
