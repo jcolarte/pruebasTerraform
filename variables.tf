@@ -53,3 +53,8 @@ variable "admin_username" {
   description = "Usuario administrador de la VM"
   default     = "azureuser"
 }
+
+variable "keyvault_name" {
+  type        = string
+  description = "Nombre único del Key Vault (3-24 chars, alfanumérico y guión)"
+}

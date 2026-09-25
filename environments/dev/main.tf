@@ -42,3 +42,12 @@ module "vm" {
   resource_group_name = azurerm_resource_group.rg.name
   environment         = var.environment
 }
+
+# Key Vault (Secrets & Keys)
+module "keyvault" {
+  source              = "../../modules/keyvault"
+  keyvault_name       = var.keyvault_name
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  environment         = var.environment
+}
